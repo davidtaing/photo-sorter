@@ -23,7 +23,7 @@ async function main() {
         exif: ["DateTimeOriginal"],
       });
       const dateTimeISO = datetime.toISOString();
-      const subdir = `${dateTimeISO.slice(0,7)}`;
+      const subdir = `${dateTimeISO.slice(0,10)}`;
       const subdirPath = path.resolve(targetFolder, subdir);
 
       if (currentDate !== subdir && !existsSync(subdirPath)) {
